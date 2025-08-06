@@ -1,6 +1,7 @@
 package com.example.workpage;
 
 import com.example.workpage.Aut.AuthService;
+import com.example.workpage.action.Actions;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,8 +35,6 @@ public class LoginController {
     public void userlogin(ActionEvent actionEvent) throws IOException {
         String username = usernameField.getText();
         String password = passwordField.getText();
-        String fetchusername = "";
-        String fetchpassword = "";
 
         if(username.isEmpty() || password.isEmpty()){
             Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -47,12 +46,7 @@ public class LoginController {
 
         boolean nam = new AuthService().login(username,password);
         if (nam){
-            FXMLLoader fxmlLoader = new FXMLLoader(LoginApp.class.getResource("HomePage.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            stage.setTitle("Login Page!");
-            stage.setScene(scene);
-            stage.show();
+            new Actions().nextpage(actionEvent,"HomePage.fxml","homepage");
         }else {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Input Error");
@@ -61,5 +55,8 @@ public class LoginController {
 
         }
 
+    }
+
+    public void signup(ActionEvent actionEvent) {
     }
 }

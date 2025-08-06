@@ -1,6 +1,5 @@
 package com.example.workpage.action;
 
-import com.almasb.fxgl.entity.action.Action;
 import com.example.workpage.LoginApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class signup {
+public class Actions {
     public void nextpage(ActionEvent actionEvent,String stagename , String stagetitle ) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApp.class.getResource(stagename));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);

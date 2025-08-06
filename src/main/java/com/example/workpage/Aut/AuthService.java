@@ -53,5 +53,17 @@ public class AuthService {
         this.id = id;
     }
 
-
+    public void Register(String username, String password, String email, int phoneNumber) {
+        try {
+            String query = "INSERT INTO users (username, password,email,phoneNumber) VALUES (?, ?,?,?)";
+            PreparedStatement stmt = DBSAccess.DBSaccess().prepareStatement(query);
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            stmt.setString(3, email);
+            stmt.setString(4, String.valueOf(phoneNumber));
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
