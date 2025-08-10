@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="548.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workpage.Engineering">
+   <children>
+      <TableView fx:id="T_view" layoutX="100.0" layoutY="34.0" prefHeight="386.0" prefWidth="516.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="14.0">         <columns>
+            <TableColumn fx:id="numbercolumn" prefWidth="70.0" text="Number" />
+            <TableColumn fx:id="bookscolumn" prefWidth="269.0" text="Books" />
+            <TableColumn fx:id="authorcolumn" prefWidth="255.0" text="Author" />
+         </columns>
+      </TableView>
+      <Button layoutX="201.0" layoutY="423.0" mnemonicParsing="false" onAction="#addbooks" prefHeight="44.0" prefWidth="127.0" text="ADD" />
+   </children>
+</AnchorPane>

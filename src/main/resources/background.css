@@ -1,0 +1,22 @@
+.onbutton{
+       -fx-background-color:#DE4D86;
+       -fx-color:#84E6F8;
+}
+
+.signup{
+    -fx-cursor: hand;
+}
+
+.login_signup{
+    -fx-cursor: hand;
+}
+
+
+.loginButton{
+    -fx-cursor: hand;
+}
+
+.signup_login{
+    -fx-cursor: hand;
+}
+

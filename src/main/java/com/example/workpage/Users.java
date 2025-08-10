@@ -1,4 +1,4 @@
 package com.example.workpage;
 
-public class HomePage {
+public class Users {
 }
