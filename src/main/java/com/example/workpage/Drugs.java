@@ -3,41 +3,42 @@ package com.example.workpage;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class Books {
+public class Drugs {
     private final SimpleIntegerProperty number;
-    private final SimpleStringProperty bookname;
-    private final SimpleStringProperty author;
+    private final SimpleStringProperty drugsname;
+    private final SimpleStringProperty manufacturer;
 
-    public String getBookname() {
-        return bookname.get();
+    public String getDrugsname() {
+
+        return drugsname.get();
     }
 
     public int getNumber() {
         return number.get();
     }
 
-    public String getAuthor() {
-        return author.get();
+    public String getManufacturer() {
+        return manufacturer.get();
     }
 
 
 
-    public Books(int number, String bookname, String author) {
+    public Drugs(int number, String drugname, String author) {
         this.number = new SimpleIntegerProperty(number);
-        this.bookname =new SimpleStringProperty(bookname);
-        this.author = new SimpleStringProperty(author);
+        this.drugsname =new SimpleStringProperty(drugname);
+        this.manufacturer = new SimpleStringProperty(author);
     }
 
     public SimpleIntegerProperty numberProperty() {
         return number;
     }
 
-    public SimpleStringProperty booknameProperty() {
-        return bookname;
+    public SimpleStringProperty drugsnameProperty() {
+        return drugsname;
     }
 
-    public SimpleStringProperty authorProperty() {
-        return author;
+    public SimpleStringProperty manufacturerProperty() {
+        return manufacturer;
     }
 
 

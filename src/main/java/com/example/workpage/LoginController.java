@@ -46,7 +46,7 @@ public class LoginController {
 
         boolean nam = new AuthService().login(username,password);
         if (nam){
-            new Actions().nextpage(actionEvent,"HomePage.fxml","homepage");
+            new Actions().nextpage(actionEvent,"Dashboard.fxml","homepage");
         }else {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Input Error");
@@ -57,6 +57,7 @@ public class LoginController {
 
     }
 
-    public void signup(ActionEvent actionEvent) {
+    public void signup(ActionEvent actionEvent) throws IOException {
+        new Actions().nextpage(actionEvent,"signup.fxml","Create account");
     }
 }

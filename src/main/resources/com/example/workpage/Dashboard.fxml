@@ -2,10 +2,20 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workpage.HomePage">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workpage.Dashboard">
    <children>
-      <Button layoutX="227.0" layoutY="274.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="147.0" styleClass="onbutton" stylesheets="@../../../background.css" text="Button" />
+      <AnchorPane prefHeight="600.0" prefWidth="206.0">
+         <children>
+            <Button layoutX="31.0" layoutY="206.0" mnemonicParsing="false" onAction="#onengineer" prefHeight="40.0" prefWidth="148.0" text="HEADACHE" />
+            <Button layoutX="28.0" layoutY="141.0" mnemonicParsing="false" onAction="#onscience" prefHeight="40.0" prefWidth="148.0" text="ANTI-MALARIAL" />
+            <Button layoutX="31.0" layoutY="270.0" mnemonicParsing="false" onAction="#onlab" prefHeight="40.0" prefWidth="148.0" text="SEX AND WELLNESS" />
+            <Button layoutX="33.0" layoutY="326.0" mnemonicParsing="false" onAction="#onbusiness" prefHeight="40.0" prefWidth="148.0" text="HERBAL" />
+            <Button layoutX="76.0" layoutY="432.0" mnemonicParsing="false" onAction="#onsignout" text="Sign out" />
+            <Button layoutX="28.0" layoutY="376.0" mnemonicParsing="false" onAction="#preview" prefHeight="40.0" prefWidth="148.0" text="VIEW MY MEDS" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="container" layoutX="206.0" layoutY="53.0" prefHeight="548.0" prefWidth="546.0" />
    </children>
-</AnchorPane>
+</Pane>

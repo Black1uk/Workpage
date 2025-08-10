@@ -9,45 +9,45 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #28c48d;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" styleClass="home" stylesheets="@../../../background.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workpage.Signupcontroller">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="307.0" style="-fx-background-color: white;">
+      <AnchorPane layoutX="218.0" layoutY="110.0" prefHeight="380.0" prefWidth="315.0" styleClass="card-form" stylesheets="@../../../background.css">
          <children>
-            <Label layoutX="89.0" layoutY="14.0" text="Sign up" textFill="#28c48d">
+            <Label layoutX="84.0" layoutY="6.0" styleClass="sign_logo" stylesheets="@../../../background.css" text="Sign up" textFill="#28c48d">
                <font>
                   <Font name="System Bold" size="33.0" />
                </font>
             </Label>
-            <TextField fx:id="UserName" layoutX="42.0" layoutY="71.0" prefHeight="27.0" prefWidth="233.0" promptText="User name" />
-            <TextField fx:id="emailField" layoutX="42.0" layoutY="121.0" prefHeight="27.0" prefWidth="233.0" promptText="Email" />
-            <TextField fx:id="numberField" layoutX="42.0" layoutY="171.0" prefHeight="27.0" prefWidth="233.0" promptText="Phone Number" />
-            <TextField fx:id="password" layoutX="43.0" layoutY="221.0" prefHeight="27.0" prefWidth="233.0" promptText="Enter Password" />
-            <Button layoutX="42.0" layoutY="271.0" mnemonicParsing="false" onAction="#onclicksignup" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: #059669;" text="Signup" textAlignment="CENTER" textFill="WHITE">
+            <TextField fx:id="UserName" layoutX="42.0" layoutY="62.0" prefHeight="27.0" prefWidth="233.0" promptText="User name" />
+            <TextField fx:id="emailField" layoutX="42.0" layoutY="110.0" prefHeight="27.0" prefWidth="233.0" promptText="Email" />
+            <TextField fx:id="numberField" layoutX="42.0" layoutY="160.0" prefHeight="27.0" prefWidth="233.0" promptText="Phone Number" />
+            <TextField fx:id="password" layoutX="43.0" layoutY="210.0" prefHeight="27.0" prefWidth="233.0" promptText="Enter Password" />
+            <Button layoutX="42.0" layoutY="260.0" mnemonicParsing="false" onAction="#onclicksignup" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: #059669;" styleClass="signup" stylesheets="@../../../background.css" text="Signup" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="174.0" layoutY="271.0" mnemonicParsing="false" onAction="#onclicklogin" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: #059669;" text="Login" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="174.0" layoutY="260.0" mnemonicParsing="false" onAction="#onclicklogin" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: #059669;" styleClass="login_signup" stylesheets="@../../../background.css" text="Login" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="92.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="92.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../image/fb_icon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="132.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="132.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../image/X_icon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="179.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="35.0" fitWidth="86.0" layoutX="179.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../image/gmail_icon.png" />
                </image>
             </ImageView>
-            <Label layoutX="103.0" layoutY="310.0" prefHeight="20.0" prefWidth="115.0" text="or Sign up using" textFill="#28c48d">
+            <Label layoutX="103.0" layoutY="305.0" prefHeight="20.0" prefWidth="115.0" text="or Sign up using" textFill="#28c48d">
                <font>
                   <Font size="14.0" />
                </font>

@@ -1,11 +1,25 @@
-.onbutton{
-       -fx-background-color:#DE4D86;
-       -fx-color:#84E6F8;
+
+.home{
+    -fx-background-color: #28c48d;
 }
+
+
+.card-form{
+    -fx-background-color:white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.login_logo{
+    -fx-Text-Fill:#059669;
+}
+
 
 .signup{
     -fx-cursor: hand;
 }
+
+
 
 .login_signup{
     -fx-cursor: hand;
@@ -18,5 +32,8 @@
 
 .signup_login{
     -fx-cursor: hand;
+    -fx-background-color:#059669;
+    -fx-background-radius:10px;
 }
+
 

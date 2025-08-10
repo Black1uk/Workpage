@@ -11,7 +11,7 @@ import javafx.scene.control.TableView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Engineering implements Initializable {
+public class MedicalAids implements Initializable {
 
     @FXML
     public TableView T_view;

@@ -1,6 +1,7 @@
 package com.example.workpage.Aut;
 
 import com.example.workpage.DBSAccess.DBSAccess;
+/*import com.example.workpage.Users;*/
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,7 +19,6 @@ public class AuthService {
             stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet resultSet= stmt.executeQuery();
-
 
             return resultSet.next();
 
@@ -55,7 +55,7 @@ public class AuthService {
 
     public void Register(String username, String password, String email, int phoneNumber) {
         try {
-            String query = "INSERT INTO users (username, password,email,phoneNumber) VALUES (?, ?,?,?)";
+            String query = "INSERT INTO users (name, password,email,phoneNumber) VALUES (?, ?,?,?)";
             PreparedStatement stmt = DBSAccess.DBSaccess().prepareStatement(query);
             stmt.setString(1, username);
             stmt.setString(2, password);
